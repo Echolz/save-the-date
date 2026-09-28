@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B0B0B">
+  <title>Запазете датата — Стефани &amp; Елизар</title>
+  <meta name="description" content="25.07.2027 · Пасарел Лейк Клуб">
+  <link rel="preload" href="assets/fonts/CormorantGaramond-wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="stage" id="stage">
+
+    <section class="scene scene--card scene--save" id="scene-save" aria-hidden="true">
+      <span class="card__frame" aria-hidden="true"></span>
+      <div class="card__content">
+        <h1 class="save__title" id="save-title"></h1>
+      </div>
+    </section>
+
+    <section class="scene scene--card scene--names" id="scene-names" aria-hidden="true">
+      <span class="card__frame" aria-hidden="true"></span>
+      <div class="card__content">
+        <h2 class="names">
+          <span class="names__name serif-caps rise" style="--d: 0.1s" data-t="name1"></span>
+          <span class="names__amp rise" style="--d: 0.9s" data-t="amp"></span>
+          <span class="names__name serif-caps rise" style="--d: 1.5s" data-t="name2"></span>
+        </h2>
+        <p class="names__sub serif-caps rise" style="--d: 2.6s" data-t="subtitle"></p>
+      </div>
+    </section>
+
+    <section class="scene scene--final" id="scene-final" aria-hidden="true">
+      <div class="photo" id="photo"></div>
+      <div class="overlay"></div>
+      <p class="final__text">
+        <span class="final__date serif-caps rise" style="--d: 1.2s" data-t="date"></span>
+        <span class="final__place serif-caps rise" style="--d: 2.2s" data-t="place"></span>
+        <span class="final__note serif-caps rise" style="--d: 3.4s" data-t="follow"></span>
+      </p>
+    </section>
+
+    <button class="curtains" id="curtains" type="button">
+      <span class="curtain curtain--left"><span class="curtain__cloth"></span></span>
+      <span class="curtain curtain--right"><span class="curtain__cloth"></span></span>
+      <span class="spotlight"></span>
+      <span class="hint">
+        <span class="hint__ring"></span>
+        <span class="hint__text" data-t="hint"></span>
+      </span>
+    </button>
+
+    <a class="ctrl ctrl--lang" id="lang-switch" href="?lang=en" hreflang="en"></a>
+
+    <button class="ctrl ctrl--mute" id="mute" type="button" aria-pressed="false" hidden>
+      <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+      <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9.5l5 5M22 9.5l-5 5"/></svg>
+    </button>
+
+    <button class="ctrl ctrl--replay is-hidden" id="replay" type="button" tabindex="-1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+      <span data-t="replay"></span>
+    </button>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
